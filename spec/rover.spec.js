@@ -7,6 +7,13 @@ const Command = require('../command.js');
 
 
 describe("Rover class", function() {
+  //TEST 7
+  test("constructor sets position and default values for mode and generatorWatts", function() {
+    let rover = new Rover(98382);
+    expect(rover.position).toBe(98382);
+    expect(rover.mode).toBe('NORMAL');
+    expect(rover.generatorWatts).toEqual(110);
+  });
 
   // 7 tests here!
 
